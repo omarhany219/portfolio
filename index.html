@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/logo.png" id="logo" />
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <img src="img/moon.png" id="icon" />
+      </nav>
+    </header>
+    <main>
+      <section class="info">
+        <h1>I'm <span>Omar Hany</span> </h1>
+        <p>
+          This is my Personal portfolio website to showcase my all works related
+          to web
+          development.
+        </p>
+        <a href="CV.pdf" id="cv">Download CV</a>
+      </section>
+      <section class="img-box">
+        <img src="https://i.stack.imgur.com/yZgGX.png" class="back-img" />
+        <img src="img/omar1.png" class="main-img" />
+      </section>
+    </main>
+    <section class="about" id="about">
+      <h2 class="title">About</h2>
+      <div class="about">
+        <h3>here we can find information about me</h3>
+        <div class="card">
+           <div class="info">
+
+          <p>My name is omar hany i was born on the 21th of september, 2004.</p>
+          </div>
+        </div>
+          <div class="card">
+            <div class="info">
+
+          <p>I studied primary school at Anas Ibn Malik School in Cairo, Egypt, middle school at Osama Ibn Zaid School in Cairo, Egypt, and secondary school at Tabari Al-Hejaz Military School in Cairo, Egypt.</p>
+          </div>
+          </div>
+          <div class="card">
+            <div class="info">
+
+          <p> I am now a Agricultural Engineering student at Suez Canal University in Ismailia, Egypt</p>
+          </div>
+          </div>
+          <div class="card">
+            <div class="info">
+            <p>My hobbies are programing, reading, playing chess, dominoes, card games, and video games as well as many more things that would take some time for me to kist them</p>
+            </div>
+       </div>
+        </div>
+        </section>
+      </section>
+      <section class="experience" id="experience">
+          <h2 class="title">experience</h2>
+          <div class="experience">
+              <div class="card">
+                <div class="info">
+                      <h3>Frontend Development</h3>
+                      <p><i class="fa-solid fa-circle-check"></i>HTML</p>
+                      <p><i class="fa-solid fa-circle-check"></i>CSS</p>
+                      <p><i class="fa-solid fa-circle-check"></i>JavaScript</p>
+                  </div>
+
+              </div>
+              <div class="card">
+                  <div class="info">
+                      <h3>Backend Development</h3>
+                      <p><i class="fa-solid fa-circle-check"></i>PostgreSQL</p>
+                      <p><i class="fa-solid fa-circle-check"></i>Python</p>
+                      <p><i class="fa-solid fa-circle-check"></i>PHP</p>
+
+                  </div>
+              </div>
+              </div>
+              </section>
+              <section class="contact" id="contact">
+                <h2 class="title">Contact Me</h2>
+                <div class="content">
+
+                <div class="info">
+                    <a><i class="fa-solid fa-envelope"></i></i>omarhany2192004@gmail.com</a>
+
+            </div>
+            </div>
+            </section>
+    <footer class="social-links">
+      <a href="https://github.com/omarhany219"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/omarhanny21/?hl=ar"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100024674860160"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/omar-hany-459a01291/"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+    <script>
+      const icon = document.getElementById("icon");
+      icon.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "img/sun.png";
+        } else {
+          icon.src = "img/moon.png";
+        }
+      });
+    </script>
+
+  </body>
+</html>
